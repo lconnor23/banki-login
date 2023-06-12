@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif&family=Inter:wght@600;800&display=swap');
+
+@layer base {
+    html {
+        font-family: 'Inter', sans-serif;
+    }
+}
+
+.heading-line-around h1{
+    font-weight: 800;
+    display: flex;
+	width: 100%;
+	align-items: center;
+    justify-items: flex-start;
+    text-align: left;
+}
+
+/*add and adjust the lines*/
+.heading-line-around h1:before,
+.heading-line-around h1:after {
+	content: '';
+	border-top: 3px solid #FF9574;
+    ;
+	margin: 0 20px 0 0;
+	flex: 1 0 20px;
+	
+    ;
+}
+
+/*add spacing between heading and lines*/
+.heading-line-around h1:after {
+	margin: 0 0 0 20px;
+}
